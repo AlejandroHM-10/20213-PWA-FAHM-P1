@@ -32,6 +32,6 @@ self.addEventListener("fetch", (event) => {
     }
 });
 
-document.getElementById("btn").addEventListener("click", (event) => {
-    console.log("Hola");
-})
+// document.getElementById("btn").addEventListener("click", (event) => {
+//     console.log("Hola");
+// })

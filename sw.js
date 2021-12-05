@@ -1,5 +1,6 @@
 console.log("SW: hola mundo");
 
+const URL = self.location.href
 let ruta = ''
 URL.startsWith('https:') ? ruta = '/20213-PWA-FAHM-P1/' : ruta = "/"
 

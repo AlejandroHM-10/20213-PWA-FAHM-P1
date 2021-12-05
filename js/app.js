@@ -1,9 +1,8 @@
 console.log("hola mundo");
-
-let ruta = ''
-URL.startsWith('https:') ? ruta = '/20213-PWA-FAHM-P1/' : ruta = "/"
+const BASE_URL = window.location.href
 
 if (navigator.serviceWorker) {
     console.log("Activado");
-    navigator.serviceWorker.register(ruta + '/sw.js')
+    BASE_URL.startsWith('https:') ? url = '/20213-PWA-FAHM-P1/sw.js' : url = "/sw.js"
+    navigator.serviceWorker.register('/sw.js')
 }

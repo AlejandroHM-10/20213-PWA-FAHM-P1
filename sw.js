@@ -1,5 +1,8 @@
 console.log("SW: hola mundo");
 
+let ruta = ''
+URL.startsWith('https:') ? ruta = '/20213-PWA-FAHM-P1/' : ruta = "/"
+
 self.addEventListener("install", (event) => {
     console.log("SW: Instalado");
 });
@@ -22,7 +25,7 @@ self.addEventListener("fetch", (event) => {
         event.respondWith(newResp);
     }
     if (event.request.url.includes(".jpg")) {
-        let newResp = fetch("/img/m1.jpg");
+        let newResp = fetch(ruta + "/img/m1.jpg");
         console.log("Es una imagen");
         event.respondWith(newResp);
     }
